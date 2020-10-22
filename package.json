@@ -1,0 +1,19 @@
+{
+  "name": "mj-pa",
+  "version": "1.0.0",
+  "description": "Custom Prettier config tailored for JavaScript environments",
+  "main": "index.json",
+  "repository": {
+    "type": "git",
+    "url": "github.com/killshot13/mj-pa"
+  },
+  "keywords": [
+    "prettier",
+    "javascript",
+    "formatter",
+    "format",
+    "mj-pa"
+  ],
+  "author": "killshot13",
+  "license": "MIT"
+}
