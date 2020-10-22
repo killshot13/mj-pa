@@ -7,7 +7,7 @@
 ## Usage
 IMPORTANT: You must have [Prettier](https://www.npmjs.com/package/prettier) installed in your project for [mj-pa](https://www.npmjs.com/package/mj-pa) to work.
 
-#### [View it on npm](npmjs.com/package/mj-pa)
+#### [View it on npm](https://npmjs.com/package/mj-pa)
 #### [Test it on RunKit](https://runkit.com/killshot13/mj-pa-runkit)
 
 #### **Installation**:
