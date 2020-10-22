@@ -1,16 +1,14 @@
 # mj-pa
-
 ## A custom [Prettier](https://prettier.io) config tailored for JavaScript environments
 
-### Why mj-pa?
-
-#### make-javascript-pretty-again!
-
+#### mj-pa == make-javascript-pretty-again!
 #### Because what javascript developer doesn't love a good one-liner? :)
 
 ## Usage
-
 IMPORTANT: You must have [Prettier](https://www.npmjs.com/package/prettier) installed in your project for [mj-pa](https://www.npmjs.com/package/mj-pa) to work.
+
+#### [View it on npm](npmjs.com/package/mj-pa)
+#### [Test it on RunKit](https://runkit.com/killshot13/mj-pa-runkit)
 
 #### **Installation**:
 
