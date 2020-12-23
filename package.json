@@ -1,11 +1,11 @@
 {
   "name": "mj-pa",
-  "version": "1.0.0",
-  "description": "Custom Prettier config tailored for JavaScript environments",
+  "version": "1.2.0",
+  "description": "Custom Prettier config tailored for JSX & JS environments",
   "main": "index.json",
   "repository": {
     "type": "git",
-    "url": "github.com/killshot13/mj-pa"
+    "url": "https://github.com/killshot13/mj-pa"
   },
   "keywords": [
     "prettier",
@@ -14,6 +14,9 @@
     "format",
     "mj-pa"
   ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
   "author": "killshot13",
   "license": "MIT"
 }
