@@ -1,4 +1,5 @@
-# mj-pa v1.2.0
+# mj-pa v1.2.0 
+[![Build Status](https://travis-ci.com/killshot13/mj-pa.svg?branch=main)](https://travis-ci.com/killshot13/mj-pa)
 
 ## A custom [Prettier](https://prettier.io) config tailored for JSX & JS environments
 
@@ -7,7 +8,6 @@
 #### make-javascript-pretty-again!
 
 #### Because what javascript developer doesn't love a good one-liner? :)
-<br></br>
 
 ## v1.2.0 Release Notes
 
