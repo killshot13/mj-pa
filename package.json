@@ -3,6 +3,9 @@
   "version": "1.2.0",
   "description": "Custom Prettier config tailored for JSX & JS environments",
   "main": "index.json",
+  "scripts": {
+    "tests": "npm install mj-pa"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/killshot13/mj-pa"
