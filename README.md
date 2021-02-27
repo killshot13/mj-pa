@@ -10,6 +10,31 @@
 
 #### Because what javascript developer doesn't love a good one-liner? :)
 
+#### RunKit Output:
+
+> ```
+> const mjPa = require("mj-pa")
+> 
+> Object
+> printWidth: 90
+> tabWidth: 1
+> useTabs: true
+> semi: false
+> singleQuote: true
+> quoteProps: "consistent"
+> jsxSingleQuote: true
+> trailingComma: "es5"
+> bracketSpacing: true
+> jsxBracketSameLine: true
+> arrowParens: "avoid"
+> parser: "typescript"
+> proseWrap: "preserve"
+> htmlWhitespaceSensitivity: "css"
+> vueIndentScriptAndStyle: true
+> endOfLine: "lf"
+> embeddedLanguageFormatting: "auto"
+> ```
+
 ## v1.2.0 Release Notes
 
 #### Improvements
