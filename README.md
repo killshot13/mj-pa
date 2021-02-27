@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.com/killshot13/mj-pa.svg?branch=main)](https://travis-ci.com/killshot13/mj-pa)
 [![Rate on Openbase](https://badges.openbase.com/js/rating/mj-pa.svg)](https://openbase.com/js/mj-pa?utm_source=embedded&utm_medium=badge&utm_campaign=rate-badge)
 
-## A custom [Prettier](https://prettier.io) config tailored for JSX & JS environments
+## A custom [Prettier](https://prettier.io) config tailored for JSX, React.js, & Node.js environments
 
 ### Why mj-pa? 
 ### (make-javascript-pretty-again)
