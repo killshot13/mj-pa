@@ -4,13 +4,12 @@
 
 ## A custom [Prettier](https://prettier.io) config tailored for JSX & JS environments
 
-### Why mj-pa?
-
-#### make-javascript-pretty-again!
+### Why mj-pa? 
+### (make-javascript-pretty-again)
 
 #### Because what javascript developer doesn't love a good one-liner? :)
 
-#### RunKit Output:
+### Configuration Output
 
 > ```
 > const mjPa = require("mj-pa")
@@ -34,6 +33,8 @@
 > endOfLine: "lf"
 > embeddedLanguageFormatting: "auto"
 > ```
+
+[View on Runkit](https://runkit.com/killshot13/runkit-npm-mj-pa)
 
 ## v1.2.0 Release Notes
 
