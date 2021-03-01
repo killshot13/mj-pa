@@ -1,22 +1,18 @@
 on:
   push:
-    branches:
-      [master, main]
+    branches: [main]
   pull_request:
-    branches:
-      [master, main]
+    branches: [main]
 
-  os: linux
+  os: [linux]
   dist: xenial
 
   language: node_js
-
   node_js:
-    version:
-      - lts
-  npm:
-    version:
-      - lts
+    - "stable"
+  cache:
+    directories:
+      - "node_modules"
 
   script:
     - echo 'Starting Build'
@@ -24,10 +20,10 @@ on:
     - npm run test
     - echo 'Test Complete'
 
-notifications:
-  email:
-    recipients:
-      - dmreh@outlook.com
-      - m.rehnert@safethishome.com
-    on_success: change
-    on_failure: always
+  notifications:
+    email:
+      recipients:
+        - dmreh@outlook.com
+        - m.rehnert@safethishome.com
+      on_success: change
+      on_failure: always
