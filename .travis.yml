@@ -1,29 +1,28 @@
-on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
+push:
+  branches: [main]
+pull_request:
+  branches: [main]
 
-  os: [linux]
-  dist: xenial
+os: [linux]
+dist: xenial
 
-  language: node_js
-  node_js:
-    - "stable"
-  cache:
-    directories:
-      - "node_modules"
+language: node_js
+node_js:
+  - "stable"
+cache:
+  directories:
+    - "node_modules"
 
-  script:
-    - echo 'Starting Build'
-    - echo 'Running Test'
-    - npm run test
-    - echo 'Test Complete'
+script:
+  - echo 'Starting Build'
+  - echo 'Running Test'
+  - npm run test
+  - echo 'Test Complete'
 
-  notifications:
-    email:
-      recipients:
-        - dmreh@outlook.com
-        - m.rehnert@safethishome.com
-      on_success: change
-      on_failure: always
+notifications:
+  email:
+    recipients:
+      - dmreh@outlook.com
+      - m.rehnert@safethishome.com
+    on_success: change
+    on_failure: always
