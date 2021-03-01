@@ -1,31 +1,33 @@
-name: Travis_CI_esmtpm
-
 on:
   push:
-    branches: [main]
+    branches:
+      [master, main]
   pull_request:
-    branches: [main]
+    branches:
+      [master, main]
 
-language: node_js
-node_js:
-  - 14
-os:
-  - linux
-dist: ubuntu
+  os: linux
+  dist: xenial
 
-before_install:
-  - npm i -g npm@>=6.14.x
+  language: node_js
 
-jobs:
-  build:
-    - run: npm install
+  node_js:
+    version:
+      - lts
+  npm:
+    version:
+      - lts
 
-npm cache: false
+  script:
+    - echo 'Starting Build'
+    - echo 'Running Test'
+    - npm run test
+    - echo 'Test Complete'
 
 notifications:
   email:
     recipients:
       - dmreh@outlook.com
       - m.rehnert@safethishome.com
-    on_success: never # default: change
-    on_failure: always # default: always
+    on_success: change
+    on_failure: always
