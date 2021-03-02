@@ -30,7 +30,6 @@
   bracketSpacing: true
   jsxBracketSameLine: true
   arrowParens: "avoid"
-  parser: "typescript"
   proseWrap: "preserve"
   htmlWhitespaceSensitivity: "css"
   vueIndentScriptAndStyle: true
@@ -49,6 +48,8 @@
 >
 > * the `index.json` file has become the the `.prettierrc.json` file
 >
+> * the default Prettier parser is now implied which dictates by filetype
+>
 > * the "mj-pa" config can now be called from the command line
 >
 > * better overall integration and flexibility has been achieved
@@ -63,6 +64,8 @@ Config options:
   --config <path>          Path to a Prettier configuration file
   (.prettierrc, package.json, prettier.config.js).
 ```
+
+3.) after experiencing issues with ESLint configurations, it seems more logical not to infer a parser and rather let Prettier decide by filetype. Hopefully that will clear up any confusion on that note.
 
 That is all for now :)
 
