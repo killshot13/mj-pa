@@ -44,8 +44,6 @@
 
 ### v1.3.0 release notes
 
-
-
 > **Summary**
 >
 > * the `index.json` file has become the the `.prettierrc.json` file
@@ -108,6 +106,10 @@ to be more specific, copy the following line of code and paste it underneath the
 --OR--
 
 use the CLI method shared in the release notes above
+
+##### sample CLI output
+
+![sample CLI output](/resources/mj-pav1.3.0.png)
 
 #### execution
 
