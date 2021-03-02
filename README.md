@@ -3,6 +3,8 @@
 ## make-javascript-pretty-again (v1.3.0)
 
 [![Build Status](https://travis-ci.com/killshot13/mj-pa.svg?branch=main)](https://travis-ci.com/killshot13/mj-pa)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+
 [![Rate on Openbase](https://badges.openbase.com/js/rating/mj-pa.svg)](https://openbase.com/js/mj-pa?utm_source=embedded&utm_medium=badge&utm_campaign=rate-badge)
 
 ---
