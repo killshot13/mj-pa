@@ -1,6 +1,6 @@
 # mj-pa
 
-## make-javascript-pretty-again (v1.3.0)
+## make-javascript-pretty-again (v1.3.1)
 
 [![Build Status](https://travis-ci.com/killshot13/mj-pa.svg?branch=main)](https://travis-ci.com/killshot13/mj-pa)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
@@ -42,7 +42,7 @@
 
 ---
 
-### v1.3.0 release notes
+### v1.3.1 release notes
 
 > **Summary**
 >
