@@ -1,22 +1,20 @@
 # mj-pa
 
-## make-javascript-pretty-again (v1.3.1)
+## v1.3.1
 
-[![Build Status](https://travis-ci.com/killshot13/mj-pa.svg?branch=main)](https://travis-ci.com/killshot13/mj-pa) | [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier) | [![Known Vulnerabilities](https://snyk.io/test/github/killshot13/mj-pa/badge.svg)](https://snyk.io/test/github/killshot13/mj-pa) | [![Rate on Openbase](https://badges.openbase.com/js/rating/mj-pa.svg)](https://openbase.com/js/mj-pa?utm_source=embedded&utm_medium=badge&utm_campaign=rate-badge)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier) | [![Known Vulnerabilities](https://snyk.io/test/github/killshot13/mj-pa/badge.svg)](https://snyk.io/test/github/killshot13/mj-pa) | [![Rate on Openbase](https://badges.openbase.com/js/rating/mj-pa.svg)](https://openbase.com/js/mj-pa?utm_source=embedded&utm_medium=badge&utm_campaign=rate-badge)
 
----
-
-### a custom [Prettier](https://prettier.io) config tailored for JSX, React.js, & Node.js environments
+### 'make-javascript-pretty-again' a custom [Prettier](https://prettier.io) config tailored for JSX, React.js, & Node.js environments
 
 #### because what javascript developer doesn't love a good one-liner? :)
 
-### run-kit output
+---
 
-[view on runkit](https://runkit.com/killshot13/runkit-npm-mj-pa)
+#### `.prettierrc.json`
+
+- [view on runkit](https://runkit.com/killshot13/mj-pa-runkit/1.3.1)
 
  ```json
- const mjPa = require("mj-pa")
-
  Object
   printWidth: 90
   tabWidth: 1
@@ -34,7 +32,6 @@
   vueIndentScriptAndStyle: true
   endOfLine: "lf"
   embeddedLanguageFormatting: "auto"
-
  ```
 
 ---
@@ -43,13 +40,13 @@
 
 > **Summary**
 >
-> * the `index.json` file has become the the `.prettierrc.json` file
+> - the `index.json` file has become the the `.prettierrc.json` file
 >
-> * the default Prettier parser is now implied which dictates by filetype
+> - the default Prettier parser is now implied which dictates by filetype
 >
-> * the "mj-pa" config can now be called from the command line
+> - the "mj-pa" config can now be called from the command line
 >
-> * better overall integration and flexibility has been achieved
+> - better overall integration and flexibility has been achieved
 
 1.) Prettier uses cosmiconfig for configuration file support. This means you can configure Prettier via (in order of precedence), with the `.prettierrc.json` conveniently in the middle of the [five available options](https://prettier.io/docs/en/configuration.html)
 
@@ -106,7 +103,7 @@ use the CLI method shared in the release notes above
 
 ##### sample CLI output
 
-![sample CLI output](/resources/mj-pav1.3.0.png)
+![sample CLI output](https://github.com/killshot13/mj-pa/raw/main/resources/mj-pav1.3.0.png)
 
 #### execution
 
