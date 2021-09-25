@@ -1,10 +1,7 @@
 {
 	"name": "mj-pa",
-	"version": "1.3.1",
+	"version": "2.0.0",
 	"description": "make-javascript-pretty-again",
-	"scripts": {
-		"test": ""
-	},
 	"main": ".prettierrc.json",
 	"repository": {
 		"type": "git",
@@ -14,12 +11,12 @@
 		"prettier",
 		"javascript",
 		"formatter",
-		"format",
+		"configuration",
 		"mj-pa"
 	],
 	"publishConfig": {
 		"registry": "https://registry.npmjs.org"
 	},
-	"author": "killshot13",
+	"author": "Michael Rehnert (killshot13)",
 	"license": "MIT"
 }

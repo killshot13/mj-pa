@@ -1,32 +1,36 @@
 # mj-pa
 
-## v1.3.1
+## v2.0.0
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier) | [![Known Vulnerabilities](https://snyk.io/test/github/killshot13/mj-pa/badge.svg)](https://snyk.io/test/github/killshot13/mj-pa) | [![Rate on Openbase](https://badges.openbase.com/js/rating/mj-pa.svg)](https://openbase.com/js/mj-pa?utm_source=embedded&utm_medium=badge&utm_campaign=rate-badge)
 
-### 'make-javascript-pretty-again' a custom [Prettier](https://prettier.io) config tailored for JSX, React.js, & Node.js environments
+### `make-javascript-pretty-again` is a custom [Prettier](https://prettier.io) config tailored to format JS, JSON, & JSX code. Best results will be realized when `mj-pa` is used to extend Prettier in a React- or Vue-based environment
 
-#### because what javascript developer doesn't love a good one-liner? :)
+### `mj-pa` is naturally opinionated, since it was derived from and directly extends the almost equally opioniated Pretter formatting tool
 
 ---
 
-#### `.prettierrc.json`
+> 👉 **`mj-pa`** — because what javascript developer doesn't love a good one-liner? 😎
 
-- [view on runkit](https://runkit.com/killshot13/mj-pa-runkit/1.3.1)
+---
+
+#### output of the `.prettierrc.json` config file
+
+- [view on runkit](https://runkit.com/killshot13/mj-pa-runkit/2.0.0)
 
  ```json
  Object
-  printWidth: 90
-  tabWidth: 1
+  printWidth: 85
+  tabWidth: 2
   useTabs: true
   semi: false
   singleQuote: true
   quoteProps: "consistent"
   jsxSingleQuote: true
-  trailingComma: "es5"
+  trailingComma: "all"
   bracketSpacing: true
-  jsxBracketSameLine: true
-  arrowParens: "avoid"
+  bracketSameLine: true
+  arrowParens: "always"
   proseWrap: "preserve"
   htmlWhitespaceSensitivity: "css"
   vueIndentScriptAndStyle: true
@@ -36,30 +40,36 @@
 
 ---
 
-### v1.3.1 release notes
+### v2.0.0 release notes
 
 > **Summary**
 >
-> - the `index.json` file has become the the `.prettierrc.json` file
+> - reduced the value of `printWidth` from `90` to `85`
 >
-> - the default Prettier parser is now implied which dictates by filetype
+> - increased the value of `tabWidth` from `1` to `2`
 >
-> - the "mj-pa" config can now be called from the command line
+> - adjusted the value of `trailingComma` from `es5` to `all`
+> **(NOTE: THE ABOVE IS A BREAKING CHANGE THAT MAY REQUIRE ADDITONAL CONFIGURATION NOT PREVIOUSLY NEEDED!)**
 >
-> - better overall integration and flexibility has been achieved
+> - replaced the now deprecated `jsxBracketSpacing` option with the new `bracketSpacing`
+>
+> - adjusted the value of `arrowParens` from `avoid` to `always`
+>
+> - improved overall aesthetics and functionality of the `mj-pa` formatting config
 
-1.) Prettier uses cosmiconfig for configuration file support. This means you can configure Prettier via (in order of precedence), with the `.prettierrc.json` conveniently in the middle of the [five available options](https://prettier.io/docs/en/configuration.html)
+1.) The new print width addresses an issue on small & mid-size devices where a 90 char line would extend beyond the visible right margin of the editor, particularly VS Code, if the IDE settings are such that both the Activity Bar and File Minimap are rendered on the right hand side of the editor.
 
-2.) when using Prettier on the command line, you can now point to mj-pa as your configuration of choice
+2.) The tab indent modification is an opinionated decision that should improve overall readability and adhere more closely to the [accepted standards](https://google.github.io/styleguide/jsguide.html#formatting-indent). While `mj-pa` does prefer tabs over spaces, to the naked eye at least, this change achieves a nearly identical view when compared to a four-space indent.
 
-```shell
-Config options:
+3.) The trailing comma rule update was admittedly overdue. To continue using `es5` conventions would have been laughable, and although my styling is arguably rather opinionated, even I am not bold enough to suggest dropping the trailing comma. Since only one option remained, the change was implemented by default. However, this a breaking change, and therefore a major version update (v2.0.0) was introduced.
 
-  --config <path>          Path to a Prettier configuration file
-  (.prettierrc, package.json, prettier.config.js).
-```
+**IMPORTANT!**
 
-3.) after experiencing issues with ESLint configurations, it seems more logical not to infer a parser and rather let Prettier decide by filetype. Hopefully that will clear up any confusion on that note.
+> Please note that in order to run, JavaScript code formatted this way [needs an engine that supports ES2017](https://prettier.io/docs/en/options.html#trailing-commas) (Node.js 8+ or a modern browser) or downlevel compilation. This also enables trailing commas in type parameters in TypeScript (supported since TypeScript 2.7 released in January 2018).
+
+4.) Since this release is already going to throw rocks at glass houses with the trailing comma rule change, there was no reason to continue supporting the `jsxBracketSameLine` odocumeption, which was deprecated in Prettier v2.4.0 in favor of the broader `bracketSameLine`. The formatted output is nearly identical anyway.
+
+5.) Since becoming more familiar with arrrow functions and type annotations, I can no longer justify my previous support for avoiding parentheses to minimize noise. In the documentation, the authors of Prettier note that a [consistent use of parentheses provides a better experience](https://prettier.io/docs/en/options.html#arrow-function-parentheses) when editing real codebases, and I agree.
 
 That is all for now :)
 
@@ -82,14 +92,14 @@ npm install --save-dev mj-pa
 YARN
 
 ```shell
-yarn add --dev mj-pa
+yarn add -D mj-pa
 ```
 
 #### configuration
 
-manually edit the `package.json` file for your project
+edit the `package.json` file for your project to extend Prettier with `mj-pa`
 
-to be more specific, copy the following line of code and paste it underneath the `version` line of your project's `package.json` file in the root directory
+or, to be more specific, copy the following line of code and paste it underneath the `version` line of your project's `package.json` file in the root directory
 
 ```json
 {
@@ -97,11 +107,7 @@ to be more specific, copy the following line of code and paste it underneath the
 }
 ```
 
---OR--
-
-use the CLI method shared in the release notes above
-
-##### sample CLI output
+#### sample CLI output
 
 ![sample CLI output](https://github.com/killshot13/mj-pa/raw/main/resources/mj-pav1.3.0.png)
 
