@@ -18,25 +18,7 @@
 
 - [view on runkit](https://runkit.com/killshot13/mj-pa-runkit/2.0.0)
 
- ```json
- Object
-  printWidth: 85
-  tabWidth: 2
-  useTabs: true
-  semi: false
-  singleQuote: true
-  quoteProps: "consistent"
-  jsxSingleQuote: true
-  trailingComma: "all"
-  bracketSpacing: true
-  bracketSameLine: true
-  arrowParens: "always"
-  proseWrap: "preserve"
-  htmlWhitespaceSensitivity: "css"
-  vueIndentScriptAndStyle: true
-  endOfLine: "lf"
-  embeddedLanguageFormatting: "auto"
- ```
+![output of the `.prettierrc.json` config file](https://github.com/killshot13/mj-pa/raw/main/resources/config.svg)
 
 ---
 
