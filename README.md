@@ -49,7 +49,7 @@
 > - increased the value of `tabWidth` from `1` to `2`
 >
 > - adjusted the value of `trailingComma` from `es5` to `all`
-> **(NOTE: THE ABOVE IS A BREAKING CHANGE THAT MAY REQUIRE ADDITONAL CONFIGURATION NOT PREVIOUSLY NEEDED!)**
+> **(NOTE: THE ABOVE IS A BREAKING CHANGE THAT MAY REQUIRE ADDITIONAL CONFIGURATION NOT PREVIOUSLY NEEDED!)**
 >
 > - replaced the now deprecated `jsxBracketSpacing` option with the new `bracketSpacing`
 >
@@ -57,19 +57,19 @@
 >
 > - improved overall aesthetics and functionality of the `mj-pa` formatting config
 
-1.) The new print width addresses an issue on small & mid-size devices where a 90 char line would extend beyond the visible right margin of the editor, particularly VS Code, if the IDE settings are such that both the Activity Bar and File Minimap are rendered on the right hand side of the editor.
+1.) The new print width addresses an issue on small & mid-size devices where a 90 char line would extend beyond the visible right margin of the editor, particularly VS Code, if the IDE settings are such that both the Activity Bar and File Minimap are rendered on the right-hand side of the editor.
 
 2.) The tab indent modification is an opinionated decision that should improve overall readability and adhere more closely to the [accepted standards](https://google.github.io/styleguide/jsguide.html#formatting-indent). While `mj-pa` does prefer tabs over spaces, to the naked eye at least, this change achieves a nearly identical view when compared to a four-space indent.
 
-3.) The trailing comma rule update was admittedly overdue. To continue using `es5` conventions would have been laughable, and although my styling is arguably rather opinionated, even I am not bold enough to suggest dropping the trailing comma. Since only one option remained, the change was implemented by default. However, this a breaking change, and therefore a major version update (v2.0.0) was introduced.
+3.) The trailing comma rule update was admittedly overdue. To continue using `es5` conventions would have been laughable, and although my styling is arguably rather opinionated, even I am not bold enough to suggest dropping the trailing comma. Since only one option remained, the change was implemented by default. However, this is a breaking change, and therefore a major version update (v2.0.0) was introduced.
 
 **IMPORTANT!**
 
-> Please note that in order to run, JavaScript code formatted this way [needs an engine that supports ES2017](https://prettier.io/docs/en/options.html#trailing-commas) (Node.js 8+ or a modern browser) or downlevel compilation. This also enables trailing commas in type parameters in TypeScript (supported since TypeScript 2.7 released in January 2018).
+> Please note that in order to run, JavaScript code is formatted this way [needs an engine that supports ES2017](https://prettier.io/docs/en/options.html#trailing-commas) (Node.js 8+ or a modern browser) or downlevel compilation. This also enables trailing commas in type parameters in TypeScript (supported since TypeScript 2.7 was released in January 2018).
 
-4.) Since this release is already going to throw rocks at glass houses with the trailing comma rule change, there was no reason to continue supporting the `jsxBracketSameLine` odocumeption, which was deprecated in Prettier v2.4.0 in favor of the broader `bracketSameLine`. The formatted output is nearly identical anyway.
+4.) Since this release is already going to throw rocks at glass houses with the trailing comma rule change, there was no reason to continue supporting the `jsxBracketSameLine` object, which was deprecated in Prettier v2.4.0 in favor of the broader `bracketSameLine`. The formatted output is nearly identical anyway.
 
-5.) Since becoming more familiar with arrrow functions and type annotations, I can no longer justify my previous support for avoiding parentheses to minimize noise. In the documentation, the authors of Prettier note that a [consistent use of parentheses provides a better experience](https://prettier.io/docs/en/options.html#arrow-function-parentheses) when editing real codebases, and I agree.
+5.) Since becoming more familiar with arrow functions and type annotations, I can no longer justify my previous support for avoiding parentheses to minimize noise. In the documentation, the authors of Prettier note that a [consistent use of parentheses provides a better experience](https://prettier.io/docs/en/options.html#arrow-function-parentheses) when editing real codebases, and I agree.
 
 That is all for now :)
 
