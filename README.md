@@ -18,6 +18,8 @@
 
 - [view on runkit](https://runkit.com/killshot13/mj-pa-runkit/2.0.0)
 
+---
+
 ![output of the `.prettierrc.json` config file](https://github.com/killshot13/mj-pa/raw/main/resources/config.svg)
 
 ---
@@ -91,7 +93,13 @@ or, to be more specific, copy the following line of code and paste it underneath
 
 #### sample CLI output
 
-![sample CLI output](https://github.com/killshot13/mj-pa/raw/main/resources/mj-pav1.3.0.png)
+(sample VSCode log output...mj-pa is extending the default configuration and formatting is being applied by the [VS Code plugin](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) for Prettier)
+
+---
+  
+![sample VSCode log output...mj-pa is extending the default configuration and formatting is being applied by the VS Code plugin for Prettier.](https://github.com/killshot13/mj-pa/blob/main/resources/mjpa-vscode-output.svg)
+
+---
 
 #### execution
 
