@@ -15,6 +15,6 @@ jobs:
     steps:
       - uses: actions/delete-package-versions@v3
         with:
-          repo-token: "{{ secrets.GPR_READ_DELETE }}"
+          token: "{{ secrets.GPR_READ_DELETE }}"
           package-name: "@killshot13/mj-pa"
           min-versions-to-keep: 2
