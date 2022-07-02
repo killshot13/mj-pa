@@ -2,7 +2,7 @@
 
 ## v2.0.0
 
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier) | [![Known Vulnerabilities](https://snyk.io/test/github/killshot13/mj-pa/badge.svg)](https://snyk.io/test/github/killshot13/mj-pa) | [![Rate on Openbase](https://badges.openbase.com/js/rating/mj-pa.svg)](https://openbase.com/js/mj-pa?utm_source=embedded&utm_medium=badge&utm_campaign=rate-badge)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier) | [![Known Vulnerabilities](https://snyk.io/test/github/killshot13/mj-pa/badge.svg)](https://snyk.io/test/github/killshot13/mj-pa) | [![Featured on Openbase](https://badges.openbase.com/js/featured/mj-pa.svg?style=openbase&token=8KO/as8Uw+yL8WMwdVQgOx3aguSx5wE9/WtSp6CYg9Q=)](https://openbase.com/js/mj-pa?utm_source=embedded&amp;utm_medium=badge&amp;utm_campaign=rate-badge)
 
 ### `make-javascript-pretty-again` is a custom [Prettier](https://prettier.io) config tailored to format JS, JSON, & JSX code. Best results will be realized when `mj-pa` is used to extend Prettier in a React- or Vue-based environment
 
