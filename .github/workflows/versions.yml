@@ -15,9 +15,7 @@ jobs:
     steps:
       - uses: actions/delete-package-versions@v3
         with:
-          owner: "@killshot13"
-          repo: "https://github.com/killshot13/mj-pa"
-          package-name: "@killshot13/mj-pa"
+          package-name: "mj-pa"
           min-versions-to-keep: 2
           token: "{{ secrets.GPR_READ_DELETE }}"
           
