@@ -13,7 +13,7 @@ jobs:
   delete-package-versions:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/delete-package-versions@v3
+      - uses: actions/delete-package-versions@v4
         with:
           package-name: "mj-pa"
           min-versions-to-keep: 2
