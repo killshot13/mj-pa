@@ -13,9 +13,11 @@ jobs:
   delete-package-versions:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/delete-package-versions@v3
+      - uses: actions/delete-package-versions@v4
         with:
-          package-name: "mj-pa"
-          min-versions-to-keep: 2
+          package-name: mj-pa
+          package-type: npm
+          owner: killshot13_npm
+          min-versions-to-keep: 3
           token: "{{ secrets.GPR_READ_DELETE }}"
-          
+          ignore-versions: '^(0|[1-9]\\d*)\\.0\\.0$'
