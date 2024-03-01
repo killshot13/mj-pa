@@ -13,7 +13,7 @@ jobs:
   delete-package-versions:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/delete-package-versions@v4
+      - uses: actions/delete-package-versions@v5
         with:
           package-name: mj-pa
           package-type: npm
